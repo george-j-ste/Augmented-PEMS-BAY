@@ -107,9 +107,9 @@ def generate_train_val_test(args):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--output_dir", type=str, default="traffic_data/npz_files", help="Output directory.")
-    parser.add_argument("--traffic_file_primary", type=str, default="traffic_data/pems_bay_speed.csv", help="Raw traffic readings - primary.",)
-    parser.add_argument("--traffic_file_secondary", type=str, default="traffic_data/pems_bay_occupancy.csv", help="Raw traffic readings - secondary.",)
+    parser.add_argument("--output_dir", type=str, default="data/traffic_data/npz_files", help="Output directory.")
+    parser.add_argument("--traffic_file_primary", type=str, default="data/traffic_data/speed.csv", help="Raw traffic readings - primary.",)
+    parser.add_argument("--traffic_file_secondary", type=str, default="data/traffic_data/occupancy.csv", help="Raw traffic readings - secondary.",)
     parser.add_argument("--seq_length_x", type=int, default=12, help="Sequence Length.",)
     parser.add_argument("--seq_length_y", type=int, default=12, help="Sequence Length.",)
     parser.add_argument("--y_start", type=int, default=1, help="Y pred start", )
